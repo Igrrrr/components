@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>sandboxVanilla</title>
+</head>
+<body>
+  <div class="demo">
+    <script>
+      var item = 0;
+      var container = document.createElement('div');
+      container.className = 'container';
+      
+      while (item < 3) {
+        item++;
+        
+        var card = document.createElement('div');
+        card.className = 'card';
+        
+        var circle = document.createElement('div');
+        circle.className = 'circle';
+        var h3 = document.createElement('h3');
+        h3.textContent = `0${item}`;
+        circle.appendChild(h3);
+        
+        var content = document.createElement('div');
+        content.className = 'content';
+        var p = document.createElement('p');
+        p.textContent = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+        
+        var a = document.createElement('a');
+        a.href = "#";
+        a.textContent = "Read More";
+        
+        content.appendChild(p);
+        content.appendChild(a);
+        
+        card.appendChild(circle);
+        card.appendChild(content);
+        
+        container.appendChild(card);
+      }
+      
+      document.querySelector('.demo').appendChild(container);
+    </script>
+  </div>
+</body>
+</html>

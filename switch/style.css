@@ -1,0 +1,11 @@
+.switch {
+  --track-width: 48px;
+  --thumb-size: 24px;
+  --thumb-active-offset: calc(var(--track-width) - var(--thumb-size));
+
+  --border-raduius: calc(var(--thumb-size) / 2);
+
+  --track-color: #cccccc;
+  --thumb-color: #f72585;
+  --accent-color: #ff80b9;
+}

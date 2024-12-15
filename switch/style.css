@@ -2,10 +2,34 @@
   --track-width: 48px;
   --thumb-size: 24px;
   --thumb-active-offset: calc(var(--track-width) - var(--thumb-size));
-
-  --border-raduius: calc(var(--thumb-size) / 2);
-
+  --border-radius: calc(var(--thumb-size) / 2);
   --track-color: #cccccc;
   --thumb-color: #f72585;
   --accent-color: #ff80b9;
+}
+
+.switch .track {
+  display: inline-block;
+  background-color: var(--track-color);
+  width: var(--track-width);
+  height: var(--thumb-size);
+  border-radius: var(--border-radius);
+  transition: background-color 200ms;
+}
+
+.switch .thumb {
+  display: inline-block;
+  background-color: var(--thumb-color);
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  border-radius: 50%;
+  transition: transform 200ms;
+}
+
+.switch input:checked + .track {
+  background-color: var(--accent-color);
+}
+
+.switch input:checked + .track .thumb {
+  transform: translateX(var(--thumb-active-offset));
 }

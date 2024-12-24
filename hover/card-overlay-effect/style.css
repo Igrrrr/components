@@ -25,8 +25,45 @@
   transition: all 0.4s ease;
 }
 
+.corner::before {
+  width: 40px; /* Задайте желаемую ширину */
+  height: 1px; /* Горизонтальная линия */
+}
+
+.corner::after {
+  height: 40px; /* Задайте желаемую высоту */
+  width: 1px; /* Вертикальная линия */
+}
+
+.card:hover .corner::before {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card:hover .corner::after {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+
+
+.left-top::before, .left-top::after {
+  top: 1rem;
+  left: 1rem;
+}
+
+.left-bottom::before, .left-bottom::after {
+  bottom: 1rem;
+  left: 1rem;
+}
+
 .right-top::before, .right-top::after {
   top: 1rem;
+  right: 1rem;
+}
+
+.right-bottom::before, .right-bottom::after {
+  bottom: 1rem;
   right: 1rem;
 }
 

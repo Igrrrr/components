@@ -1,0 +1,30 @@
+body {
+	box-sizing: border-box;
+  
+}
+
+li {
+  list-style-type: none;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.list, .container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 50px;
+  /* transition: scale 1s, filter 1s; */
+  transition: scale 1s, filter 1s;
+}
+
+.list:has(:hover) :not(:hover),
+.container:has(:hover) :not(:hover) {
+  scale: 0.8;
+  filter: blur(2px);
+}
+

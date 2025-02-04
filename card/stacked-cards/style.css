@@ -1,0 +1,36 @@
+.stacked-cards {
+  width: 40rem;
+  height: 25rem;
+  background-color: red;
+
+  display: grid;
+  grid-template-areas: 'stack';
+}
+
+.stacked-cards .layer {
+  grid-area: stack;
+}
+
+.layer1 {
+  scale: 0.8;
+  translate: 0 -8rem;
+}
+
+.layer2 {
+  scale: 0.9;
+  translate: 0 -4rem;
+}
+
+.layer3 {
+  z-index: 0;
+}
+
+.layer1 .collapsed {
+  translate: 0 -2.5rem;
+  scale: 0.9;
+}
+
+.layer2 .collapsed{
+  translate: 0 -1.25rem;
+  scale: 0.95;
+}

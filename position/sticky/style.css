@@ -1,0 +1,31 @@
+
+.sticky {
+  position: absolute;
+  position: sticky;
+  top: 20px;
+  right: 0;
+  float: right;
+  padding: 80px;
+  background: red;
+  color: #fff;
+  font-size: 30px;
+}
+
+
+.content {
+  font-size: 25px;
+  margin: 0 480px 0 0;
+  text-align: justify;
+}
+header,
+footer{
+  background: cadetblue;
+  color: #fff;
+  font-size: 30px;
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+footer {
+  padding: 200px 0;
+}

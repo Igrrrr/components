@@ -34,8 +34,25 @@ new Swiper(".image-slider", {
     //   //Progressbar
     //   type: "progressbar",
   },
+
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
+  },
+
+  //click to slide
+  slideToClickedSlide: true,
+
+  //keyboard control
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+
+  //mouse control
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: ".image-slider",
   },
 });

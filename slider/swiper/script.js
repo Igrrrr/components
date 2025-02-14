@@ -55,4 +55,10 @@ new Swiper(".image-slider", {
     sensitivity: 1,
     eventsTarget: ".image-slider",
   },
+
+  //autoheight
+  autoHeight: true,
+
+  //slides on page
+  slidesPerView: 3,
 });

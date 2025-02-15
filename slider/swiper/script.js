@@ -61,4 +61,13 @@ new Swiper(".image-slider", {
 
   //slides on page
   slidesPerView: 3,
+
+  //gap
+  spaceBetween: 30,
+
+  //кол-во пролистываемых слайдов
+  slidesPerGroup: 1,
+
+  //Активный слайд по центру
+  centeredSlides: true,
 });

@@ -60,7 +60,7 @@ body {
   
 }
 .image-slider__slide {
-
+  background-color: yellow;
 }
 .image-slider__image {
 

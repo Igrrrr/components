@@ -57,10 +57,10 @@ new Swiper(".image-slider", {
   },
 
   //autoheight
-  autoHeight: true,
+  autoHeight: false,
 
   //slides on page
-  slidesPerView: 3,
+  slidesPerView: 2,
 
   //gap
   spaceBetween: 30,
@@ -69,5 +69,33 @@ new Swiper(".image-slider", {
   slidesPerGroup: 1,
 
   //Активный слайд по центру
-  centeredSlides: true,
+  //centeredSlides: true,
+
+  //стартовый слайд
+  //initialSlide: 2,
+
+  //мультирядность
+  slidesPerColumn: 1,
+
+  //бесконечный слайдер
+  loop: true,
+
+  //кол-во дублирующих слайдов
+  loopSlides: 0,
+
+  //свободный режим
+  freeMode: false,
+
+  //автопрокрутка
+  autoplay: {
+    //пауза между прокруткой
+    delay: 1000,
+    //закончить на послднем слайде
+    stopOnLastSlide: false,
+    //отключить после ручного переключения
+    disableOnInteraction: true,
+  },
+
+  //скорость прокрутки
+  speed: 1000,
 });

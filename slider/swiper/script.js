@@ -60,7 +60,7 @@ new Swiper(".image-slider", {
   autoHeight: false,
 
   //slides on page
-  slidesPerView: 2,
+  //slidesPerView: 3,
 
   //gap
   spaceBetween: 30,
@@ -87,15 +87,88 @@ new Swiper(".image-slider", {
   freeMode: false,
 
   //автопрокрутка
-  autoplay: {
-    //пауза между прокруткой
-    delay: 1000,
-    //закончить на послднем слайде
-    stopOnLastSlide: false,
-    //отключить после ручного переключения
-    disableOnInteraction: true,
-  },
+  // autoplay: {
+  //   //пауза между прокруткой
+  //   delay: 1000,
+  //   //закончить на послднем слайде
+  //   stopOnLastSlide: false,
+  //   //отключить после ручного переключения
+  //   disableOnInteraction: true,
+  // },
 
   //скорость прокрутки
   speed: 1000,
+
+  //вертикальный слайдер
+  //direction: "horizontal",
+
+  //эффекты переключения слайдов
+  // листание
+  //effect: "slide",
+
+  // //смена прозрачности
+  // effect: "fade",
+  // // дополнение к fade
+  // fadeEffect: {
+  //   //параллельная смена прозрачности
+  //   crossFade: true,
+  // },
+
+  // //переворот
+  // effect: "flip",
+  // //дополнение к flip
+  // flipEffect: {
+  //   //тень
+  //   slideShadows: true,
+  //   //показ только активного слайда
+  //   limitRotation: true,
+  // },
+
+  // //куб
+  // effect: "cube",
+  // //дополнение к cube
+  // cubeEffect: {
+  //   //настройка тени
+  //   slideShadows: true,
+  //   shadow: true,
+  //   shadowEffect: 20,
+  //   shadowScale: 0.94,
+  // },
+
+  // //поток
+  // effect: "coverflow",
+  // //дополнение к coverflow
+  // coverFlowEffect: {
+  //   //угол
+  //   rotate: 20,
+  //   //наложение
+  //   stretch: 50,
+  //   //тень
+  //   slideShadow: true,
+  // },
+
+  //адаптив
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   480: {
+  //     slidesPerView: 2,
+  //   },
+  //   992: {
+  //     slidesPerView: 3,
+  //   },
+  // },
+  //соотношение сторон
+  breakpoints: {
+    "@0.75": {
+      slidesPerView: 1,
+    },
+    "@1.00": {
+      slidesPerView: 2,
+    },
+    "@1.50": {
+      slidesPerView: 3,
+    },
+  },
 });

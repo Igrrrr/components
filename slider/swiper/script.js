@@ -2,7 +2,7 @@ new Swiper(".image-slider", {
   //Arrows
   navigation: {
     nextEl: ".swiper-button-next",
-    prevtEl: ".swiper-button-prev",
+    prevEl: ".swiper-button-prev",
   },
   //Navigation,
   //Bullets
@@ -162,7 +162,7 @@ new Swiper(".image-slider", {
   //соотношение сторон
   breakpoints: {
     "@0.75": {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     "@1.00": {
       slidesPerView: 2,

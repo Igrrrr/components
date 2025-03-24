@@ -1,0 +1,13 @@
+.wrapper {
+  overflow: hidden;
+}
+
+.wrapper img {
+  width: 10%;
+  height: 10%;
+  transition: scale 400ms;
+}
+
+.wrapper:hover img {
+  scale: 120%
+}

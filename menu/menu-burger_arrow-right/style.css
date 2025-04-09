@@ -2,6 +2,7 @@ body {
   background-color: grey;
 }
 
+
 .label-check {
   display: none;
 }
@@ -11,7 +12,6 @@ body {
   height: 58px;
   display: block;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .hamburger-label div {
@@ -22,7 +22,7 @@ body {
 }
 
 .line1 {
-  transition: all 0.3s;
+  transition: all .3s;
 }
 
 .line2 {
@@ -36,12 +36,12 @@ body {
 }
 
 #label-check:checked + .hamburger-label .line1 {
-  transform: rotate(35deg) scaleX(0.55) translate(39px, -4.5px);
+  transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
   border-radius: 50px 50px 50px 0;
 }
 
 #label-check:checked + .hamburger-label .line3 {
-  transform: rotate(-35deg) scaleX(0.55) translate(39px, 4.5px);
+  transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
   border-radius: 0 50px 50px 50px;
 }
 
@@ -49,7 +49,4 @@ body {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   width: 45px;
-}
-#label-check:checked + .hamburger-label {
-  transform: rotate(90deg);
 }

@@ -1,0 +1,18 @@
+.retro {
+  margin: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #121212;
+  box-shadow: 0.25rem 0.25rem #121212;
+
+  transition: transform 50ms, box-shadow 50ms;
+}
+
+.retro:active {
+  transform: translate(0.125rem, 0.125rem);
+  box-shadow: 0.125rem 0.125rem #121212;
+}

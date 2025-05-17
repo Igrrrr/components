@@ -1,7 +1,9 @@
 body {
   background-color: black;
 }
+
 button {
+  margin: 2rem;
   padding: 10px 20px;
   text-transform: uppercase;
   border-radius: 8px;

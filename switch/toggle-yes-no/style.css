@@ -1,0 +1,108 @@
+.toggle-button {
+  position: relative;
+  height: 100px;
+  margin: 20px;
+  background-color: transparent;
+}
+
+.toggle-button:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.knob,
+.btn-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.btn {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.btn.btn-rect {
+  border-radius: 5px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knob {
+  z-index: 2;
+}
+
+.btn-bg {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-15 .knob:before,
+#button-15 .knob:after {
+  position: absolute;
+  top: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  opacity: 1;
+  border-radius: 2px;
+  transform: scale(1);
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-15 .knob:before {
+  content: "YES";
+  left: 4px;
+  background-color: #03a9f4;
+}
+
+#button-15 .knob:after {
+  content: "NO";
+  right: 4px;
+  opacity: 0;
+  transform: scale(4);
+  background-color: #f44336;
+}
+
+#button-15 .checkbox:checked + .knob:before {
+  opacity: 0;
+  transform: scale(4);
+}
+
+#button-15 .checkbox:checked + .knob:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#button-15 .checkbox:checked ~ .btn-bg {
+  background-color: #fcebeb;
+}
